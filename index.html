@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>JS ENCRYPTION / DECRYPTION</title>
+
+<head>
+  <script src="encryption.js"></script>
+</head>
+
+<body>
+    <script>
+        var myRandomStr = Math.random().toString(36).substring(7),
+            myEncStr = Encrypt_text(myRandomStr),
+            myDecStr = Decrypt_text(myEncStr);
+        document.getElementById("mainS").value = myRandomStr, document.getElementById("encS").value = myEncStr, document.getElementById("decS").value = myDecStr;
+    </script>
+    My Initital String : <div id="mainS"></div>
+    Encrypted String : <div id="encS"></div>
+    Decrypted String : <div id="decS"></div>
+</body>
+
+</html>
