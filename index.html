@@ -6,9 +6,10 @@
     <style>
         div {
             height: auto;
-            border: 1px solid #00f;
-            padding: 10px;
-            margin: 10px
+            border: 1px solid #999;
+            padding: 25px;
+            margin: 20px;
+            font: italic 12px/30px Georgia, serif
         }
     </style>
 </head>
@@ -22,7 +23,7 @@
         var myRandomStr = Math.random().toString(36).substring(7),
             myEncStr = Encrypt_text(myRandomStr),
             myDecStr = Decrypt_text(myEncStr);
-        document.getElementById("mainS").innerHTML = "My Initital String: " + myRandomStr, document.getElementById("encS").innerHTML = "Encrypted String: " + myEncStr, document.getElementById("decS").innerHTML = "Decrypted String: " + myDecStr;
+        document.getElementById("mainS").innerHTML = "<font style='font-weight:700'>My Initital String:</font> " + myRandomStr, document.getElementById("encS").innerHTML = "<font style='font-weight:700'>Encrypted String:</font> " + myEncStr, document.getElementById("decS").innerHTML = "<font style='font-weight:700'>Decrypted String:</font> " + myDecStr;
     </script>
 </body>
 
